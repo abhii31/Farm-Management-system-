@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+
+<body>
+    <section id="sign">
+        <header class="header">
+            <h1 class="h-primary center">Sign Up</h1>
+        </header>
+        <div id="sign-box">
+        <form action="">
+      
+        <div class="form-group">
+          <label for="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+      </div>
+
+    <div class="form-group">
+      <label for="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" onBlur="checkAvailability()" placeholder="Enter your Email" required />
+      <span id="user-availability-status" style="font-size:12px;"></span> 
+    </div>
+
+    <div class="form-group">
+      <label for="number-label" for="number">Mobile No.</label>
+      <input type="text" name="number" id="number" class="form-control" placeholder="Enter your Mobile Number." required />
+    </div>
+        
+
+    <div class="form-group">
+      <label for="password-label" for="password">Password</label>
+      <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password.." required />
+    </div>
+   
+    <div class="form-group">
+      <label for="password-label" for="password">Confrim Password</label>
+      <input type="password" name="confirmpassword" id="confirmpassword" class="form-control" placeholder="Enter your Confrim Password.." required />
+    </div>
+
+    <p id="description" class="description text-center">
+      Already User Has <a href="login.html">Login Page</a>
+    </p>
+    
+    <div class="form-group">
+     <input type="submit" value="Sign up" id="submit" name="signup" class="submit-button">
+    </div>
+
+  </form>
+</div>
+</section>
+</body>
+</html>
